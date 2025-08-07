@@ -24,7 +24,7 @@ async function authmiddleware(req,res,next){
         // });
         
          // if user found saved data in user.req ,it can be anything chacha.req or anything
-        user.req = user 
+        req.user = user 
         next()
 
     } catch (error) {
